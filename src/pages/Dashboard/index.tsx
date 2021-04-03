@@ -7,6 +7,15 @@ import ModalAddFood from '../../components/ModalAddFood';
 import ModalEditFood from '../../components/ModalEditFood';
 import { FoodsContainer } from './styles';
 
+export interface FoodItems {
+  id: number;
+  name: string;
+  description: string;
+  price: number;
+  image: string;
+  available: boolean;
+};
+
 class Dashboard extends Component {
   constructor(props) {
     super(props);
